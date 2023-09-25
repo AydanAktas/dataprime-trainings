@@ -1,12 +1,23 @@
+Clone the git repository
+```sh
+git clone https://github.com/AydanAktas/dataprime-trainings/ dataprime-trainings
+```
+
+Navigate to the Module1 folder
+```sh
+cd dataprime-trainings/Module1/
+```
+
+Execute the setup file by replacing the parameters below:
+
+resourcegroupname: Resource group name 
+
+suffix: Unique suffix which will be appended to the resource names to make them unique
+
+username: Admin user name of the sql servers
+
+password: Admin password of the sql servers
 
 ```sh
-$password = ConvertTo-SecureString "yourpassword" -AsPlainText -Force
-
-New-AzResourceGroupDeployment `
-  -Name Module1_Deployment `
-  -ResourceGroupName dataprime-training-module1 `
-  -suffix <uniquesuffix> `
-  -adminuser <username> `
-  -adminpassword $password `
-  -TemplateFile ARM-Template-Module1.json
+./Module1-setup.ps1 '<resourcegroupname>' '<suffix>' '<username>' '<password>'
 ```
