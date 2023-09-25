@@ -33,4 +33,4 @@ $destination = $dataLakeStorageUrl + "hrfiles" + $destinationSasKey
 
 Write-Information "Loading the data into the storage account..."
 
-azcopy copy './data/hrfiles/' $destination --recursive
+azcopy copy './data/hrfiles/*' $destination --recursive
