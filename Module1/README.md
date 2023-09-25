@@ -1,4 +1,6 @@
-$password = ConvertTo-SecureString "<yourpassword>" -AsPlainText -Force
+
+```sh
+$password = ConvertTo-SecureString "yourpassword" -AsPlainText -Force
 
 New-AzResourceGroupDeployment `
   -Name Module1_Deployment `
@@ -7,3 +9,4 @@ New-AzResourceGroupDeployment `
   -adminuser <username> `
   -adminpassword $password `
   -TemplateFile ARM-Template-Module1.json
+```
