@@ -1,7 +1,16 @@
-$resourceGroupName = "dataprime-training-module1"
-$suffix = "cc"
-$AdminUser = "sqladminuser"
-$AdminPassword = "Password!0"
+param(
+     [Parameter()]
+     [string]$resourceGroupName,
+
+     [Parameter()]
+     [string]$suffix,
+	 
+	 [Parameter()]
+     [string]$AdminUser,
+
+     [Parameter()]
+     [string]$AdminPassword
+ )
 
 $SecurePassword = ConvertTo-SecureString $AdminPassword -AsPlainText -Force
 
