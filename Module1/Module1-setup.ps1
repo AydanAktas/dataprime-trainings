@@ -1,6 +1,9 @@
 param(
      [Parameter()]
      [string]$resourceGroupName,
+	 
+	 [Parameter()]
+     [string]$location,
 
      #[Parameter()]
      #[string]$suffix,
@@ -17,6 +20,7 @@ $SecurePassword = ConvertTo-SecureString $AdminPassword -AsPlainText -Force
 $result = New-AzResourceGroupDeployment -Verbose `
   -Name "Module1-Deployment" `
   -ResourceGroupName $resourceGroupName `
+  -Location $location `
   -suffix $suffix `
   -adminuser $AdminUser `
   -adminpassword $SecurePassword `
