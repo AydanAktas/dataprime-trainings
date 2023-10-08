@@ -2,19 +2,6 @@
     "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
     "contentVersion": "1.0.0.0",
     "parameters": {
-		"ResourceGroupName": {
-		  "type": "string",
-		  "metadata": {
-			"description": "Resource Group Name"
-		  }
-		},
-		"location": {
-            "type": "String",
-			"defaultValue": "westeurope",
-            "metadata": {
-                "description": "Location of the resource group and the resources"
-            }
-        },
         "suffix": {
             "type": "String",
 			"defaultValue": "[uniqueString(resourceGroup().id)]",
@@ -42,24 +29,17 @@
 		"sqlvm-suffix": "[substring(parameters('suffix'),6)]"
     },
 	"resources": [
-			{
-				"type": "Microsoft.Resources/resourceGroups",
-				"apiVersion": "2018-05-01",
-				"location": "[parameters('location')]",
-				"name": "[parameters('ResourceGroupName')]",
-				"properties": {}
-			},
-			{
+    {
 				"type": "Microsoft.DocumentDB/databaseAccounts",
 				"apiVersion": "2022-05-15",
 				"name": "[concat('cosmosdb-module1-', parameters('suffix'))]",
-				"location": "[parameters('location')]",
+				"location": "[resourceGroup().location]",
 				"kind": "GlobalDocumentDB",
 				"properties": {
 					"databaseAccountOfferType": "Standard",
 					"locations": [
 					  {
-						"locationName": "[parameters('location')]",
+						"locationName": "[resourceGroup().location]",
 						"failoverPriority": 0,
 						"isZoneRedundant": false
 					  }
@@ -143,7 +123,7 @@
 				"name": "Standard_LRS"
 			  },
 			  "kind": "StorageV2",
-			  "location": "[parameters('location')]",
+			  "location": "[resourceGroup().location]",
 
 			  "properties": {
 				"isHnsEnabled": true
@@ -188,7 +168,7 @@
 			  "type": "Microsoft.Sql/servers",
 			  "apiVersion": "2022-05-01-preview",
 			  "name": "[concat('dataprime-', parameters('suffix'))]",
-			  "location": "[parameters('location')]",
+			  "location": "[resourceGroup().location]",
 			  "properties": {
 				"administratorLogin": "[parameters('AdminUser')]",
 				"administratorLoginPassword": "[parameters('AdminPassword')]"
@@ -198,7 +178,7 @@
 				"type": "Microsoft.Sql/servers/firewallRules",
 				"apiVersion": "2023-02-01-preview",
 				"name": "[concat('dataprime-', parameters('suffix'), '/AllowAllWindowsAzureIps')]",
-				"location": "[parameters('location')]",
+				"location": "[resourceGroup().location]",
 				"properties": {
 					"startIpAddress": "0.0.0.0",
 					"endIpAddress": "0.0.0.0"
@@ -211,7 +191,7 @@
 			  "type": "Microsoft.Sql/servers/databases",
 			  "apiVersion": "2022-05-01-preview",
 			  "name": "[concat('dataprime-', parameters('suffix'), '/AdventureWorks')]",
-			  "location": "[parameters('location')]",
+			  "location": "[resourceGroup().location]",
 			  "sku": {
 				"capacity": 5,
 				"name": "Basic",
@@ -228,7 +208,7 @@
 			  "type": "Microsoft.Sql/servers/databases",
 			  "apiVersion": "2022-05-01-preview",
 			  "name": "[concat('dataprime-', parameters('suffix'), '/metadata')]",
-			  "location": "[parameters('location')]",
+			  "location": "[resourceGroup().location]",
 			  "sku": {
 				"capacity": 5,
 				"name": "Basic",
@@ -242,7 +222,7 @@
 			  "type": "Microsoft.Network/networkSecurityGroups",
 			  "apiVersion": "2022-01-01",
 			  "name": "[concat('sqlvm-nsg-', parameters('suffix'))]",
-			  "location": "[parameters('location')]",
+			  "location": "[resourceGroup().location]",
 			  "properties": {
                 "securityRules": [
                     {
@@ -290,7 +270,7 @@
 			  "type": "Microsoft.Network/virtualNetworks",
 			  "apiVersion": "2021-02-01",
 			  "name": "[concat('sqlvm-vnet-', parameters('suffix'))]",
-			  "location": "[parameters('location')]",
+			  "location": "[resourceGroup().location]",
 			  "properties": {
 				  "addressSpace": {
 						"addressPrefixes": [
@@ -334,7 +314,7 @@
 			  "type": "Microsoft.Network/publicIPAddresses",
 			  "apiVersion": "2022-01-01",
 			  "name": "[concat('sqlvm-ip-', parameters('suffix'))]",
-			  "location": "[parameters('location')]",
+			  "location": "[resourceGroup().location]",
 			  "sku": {
 				"name": "Standard"
 			  },
@@ -350,7 +330,7 @@
 			  "type": "Microsoft.Network/networkInterfaces",
 			  "apiVersion": "2022-01-01",
 			  "name": "[concat('sqlvm-ni-', parameters('suffix'))]",
-			  "location": "[parameters('location')]",
+			  "location": "[resourceGroup().location]",
 			  "properties": {
 				"ipConfigurations": [
 				  {
@@ -381,7 +361,7 @@
 			  "type": "Microsoft.Compute/virtualMachines",
 			  "apiVersion": "2023-03-01",
 			  "name": "[concat('sqlvm-', variables('sqlvm-suffix'))]",
-			  "location": "[parameters('location')]",
+			  "location": "[resourceGroup().location]",
 			  "properties": {
                 "hardwareProfile": {
                     "vmSize": "Standard_D16ds_v4"
@@ -416,7 +396,7 @@
 			  "type": "Microsoft.SqlVirtualMachine/sqlVirtualMachines",
 			  "apiVersion": "2022-08-01-preview",
 			  "name": "[concat('sqlvm-', variables('sqlvm-suffix'))]",
-			  "location": "[parameters('location')]",
+			  "location": "[resourceGroup().location]",
 			  "properties": {
 				  "sqlImageOffer": "SQL2022-WS2022",
 				  "sqlImageSku": "Developer",
@@ -438,7 +418,7 @@
 			  "type": "Microsoft.Storage/storageAccounts",
 			  "apiVersion": "2022-09-01",
 			  "name": "[concat('appstorage', parameters('suffix'))]",
-			  "location": "[parameters('location')]",
+			  "location": "[resourceGroup().location]",
 			  "kind": "StorageV2",
 			  "sku": {
 				"name": "Standard_LRS"
@@ -448,7 +428,7 @@
 			  "type": "Microsoft.Web/serverfarms",
 			  "apiVersion": "2022-03-01",
 			  "name": "[concat('ASP-dataprimetrainingmodule1-', parameters('suffix'))]",
-			  "location": "[parameters('location')]",
+			  "location": "[resourceGroup().location]",
 			  "properties": {
 				"computeMode": "Dynamic"
 			  },
@@ -464,7 +444,7 @@
 			  "type": "Microsoft.Insights/components",
 			  "apiVersion": "2020-02-02",
 			  "name": "[concat('dataprime-module1-cosmosauth-', parameters('suffix'))]",
-			  "location": "[parameters('location')]",
+			  "location": "[resourceGroup().location]",
 			  "tags": {
 				"[format('hidden-link:{0}', resourceId('Microsoft.Web/sites', concat('dataprime-module1-cosmosauth-', parameters('suffix'))))]": "Resource"
 			  },
@@ -478,7 +458,7 @@
 			  "apiVersion": "2022-03-01",
 			  "name": "[concat('dataprime-module1-cosmosauth-', parameters('suffix'))]",
 			  "kind": "functionapp",
-			  "location": "[parameters('location')]",
+			  "location": "[resourceGroup().location]",
 			  "properties": {
 				"serverFarmId": "[resourceId('Microsoft.Web/serverfarms', concat('ASP-dataprimetrainingmodule1-', parameters('suffix')))]",
 				"siteConfig": {
@@ -524,7 +504,7 @@
 			  "type": "Microsoft.DataFactory/factories",
 			  "apiVersion": "2018-06-01",
 			  "name": "[concat('datafactory-module1-', parameters('suffix'))]",
-			  "location": "[parameters('location')]",
+			  "location": "[resourceGroup().location]",
 			  "identity": {
 				"type": "SystemAssigned"
 			  },
@@ -534,7 +514,7 @@
 			  "type": "Microsoft.KeyVault/vaults",
 			  "apiVersion": "2021-11-01-preview",
 			  "name": "[concat('module1-kv-', parameters('suffix'))]",
-			  "location": "[parameters('location')]",
+			  "location": "[resourceGroup().location]",
 			  "properties": {
 				"tenantId": "[subscription().tenantId]",
 				"accessPolicies": [
