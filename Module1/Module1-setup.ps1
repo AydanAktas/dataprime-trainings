@@ -14,13 +14,15 @@ param(
 
 $SecurePassword = ConvertTo-SecureString $AdminPassword -AsPlainText -Force
 
-New-AzResourceGroupDeployment -Verbose `
+$result = New-AzResourceGroupDeployment -Verbose `
   -Name "Module1-Deployment" `
   -ResourceGroupName $resourceGroupName `
   -suffix $suffix `
   -adminuser $AdminUser `
   -adminpassword $SecurePassword `
   -TemplateFile ARM-Template-Module1.json
+  
+$suffix = $result.parameters('suffix')
   
 Write-Information "All the resources deployed..."
 
