@@ -34,3 +34,19 @@ $destination = $dataLakeStorageUrl + "hrfiles" + $destinationSasKey
 Write-Information "Loading the data into the storage account..."
 
 azcopy copy './data/hrfiles/*' $destination --recursive
+
+azcopy copy './data/adventureworks/*' $destination --recursive
+
+Write-Information "Restoring AdventureWorks2022 database to SQL Server..."
+
+$SqlServer    = "sqlvm-" + $suffix + ".westeurope.cloudapp.azure.com"
+$adventureworksSasKey = New-AzureStorageContainerSASToken -Container "adventureworks" -Context $dataLakeContext -Permission rwdl
+
+$CredentialQuery = "CREATE CREDENTIAL [https://storageaccountmodule1" + $suffix + ".blob.core.windows.net/adventureworks]
+WITH IDENTITY='SHARED ACCESS SIGNATURE', SECRET = '" + $adventureworksSasKey.Substring(1) + "'"
+
+Invoke-Sqlcmd  -ConnectionString "Data Source=$SqlServer; User Id=$AdminUser; Password =$AdminPassword" -Query $CredentialQuery
+
+$RestoreQuery = "RESTORE DATABASE AdventureWorks FROM URL = 'https://storageaccountmodule1" + $suffix + ".blob.core.windows.net/adventureworks/AdventureWorks2022.bak'"
+   
+Invoke-Sqlcmd  -ConnectionString "Data Source=$SqlServer; User Id=$AdminUser; Password =$AdminPassword" -Query $RestoreQuery
