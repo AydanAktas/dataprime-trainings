@@ -155,6 +155,15 @@
 				]
 			},
 			{
+			  "type": "Microsoft.Storage/storageAccounts/blobServices/containers",
+			  "apiVersion": "2022-09-01",
+			  "name": "[concat('storageaccountmodule1', parameters('suffix'), '/default/adventureworks')]",
+			  "dependsOn": [
+				"[resourceId('Microsoft.Storage/storageAccounts/blobServices', concat('storageaccountmodule1', parameters('suffix')), 'default')]",
+				"[resourceId('Microsoft.Storage/storageAccounts', concat('storageaccountmodule1', parameters('suffix')))]"
+				]
+			},
+			{
 			  "type": "Microsoft.Sql/servers",
 			  "apiVersion": "2022-05-01-preview",
 			  "name": "[concat('dataprime-', parameters('suffix'))]",
