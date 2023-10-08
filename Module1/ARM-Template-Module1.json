@@ -117,7 +117,7 @@
 			{
 			  "type": "Microsoft.Storage/storageAccounts",
 			  "apiVersion": "2022-09-01",
-			  "name": "[concat('storageaccountmodule1', parameters('suffix'))]",
+			  "name": "[concat('adlsmodule1', parameters('suffix'))]",
 			  "sku": {
 				"name": "Standard_LRS"
 			  },
@@ -131,36 +131,36 @@
 			{
 			  "type": "Microsoft.Storage/storageAccounts/blobServices",
 			  "apiVersion": "2022-09-01",
-			  "name": "[concat('storageaccountmodule1', parameters('suffix'), '/default')]",
+			  "name": "[concat('adlsmodule1', parameters('suffix'), '/default')]",
 			  "dependsOn": [
-				"[resourceId('Microsoft.Storage/storageAccounts', concat('storageaccountmodule1', parameters('suffix')))]"
+				"[resourceId('Microsoft.Storage/storageAccounts', concat('adlsmodule1', parameters('suffix')))]"
 				]
 			},
 			{
 			  "type": "Microsoft.Storage/storageAccounts/blobServices/containers",
 			  "apiVersion": "2022-09-01",
-			  "name": "[concat('storageaccountmodule1', parameters('suffix'), '/default/hrfiles')]",
+			  "name": "[concat('adlsmodule1', parameters('suffix'), '/default/hrfiles')]",
 			  "dependsOn": [
-				"[resourceId('Microsoft.Storage/storageAccounts/blobServices', concat('storageaccountmodule1', parameters('suffix')), 'default')]",
-				"[resourceId('Microsoft.Storage/storageAccounts', concat('storageaccountmodule1', parameters('suffix')))]"
+				"[resourceId('Microsoft.Storage/storageAccounts/blobServices', concat('adlsmodule1', parameters('suffix')), 'default')]",
+				"[resourceId('Microsoft.Storage/storageAccounts', concat('adlsmodule1', parameters('suffix')))]"
 				]
 			},
 			{
 			  "type": "Microsoft.Storage/storageAccounts/blobServices/containers",
 			  "apiVersion": "2022-09-01",
-			  "name": "[concat('storageaccountmodule1', parameters('suffix'), '/default/trainees')]",
+			  "name": "[concat('adlsmodule1', parameters('suffix'), '/default/trainees')]",
 			  "dependsOn": [
-				"[resourceId('Microsoft.Storage/storageAccounts/blobServices', concat('storageaccountmodule1', parameters('suffix')), 'default')]",
-				"[resourceId('Microsoft.Storage/storageAccounts', concat('storageaccountmodule1', parameters('suffix')))]"
+				"[resourceId('Microsoft.Storage/storageAccounts/blobServices', concat('adlsmodule1', parameters('suffix')), 'default')]",
+				"[resourceId('Microsoft.Storage/storageAccounts', concat('adlsmodule1', parameters('suffix')))]"
 				]
 			},
 			{
 			  "type": "Microsoft.Storage/storageAccounts/blobServices/containers",
 			  "apiVersion": "2022-09-01",
-			  "name": "[concat('storageaccountmodule1', parameters('suffix'), '/default/adventureworks')]",
+			  "name": "[concat('adlsmodule1', parameters('suffix'), '/default/adventureworks')]",
 			  "dependsOn": [
-				"[resourceId('Microsoft.Storage/storageAccounts/blobServices', concat('storageaccountmodule1', parameters('suffix')), 'default')]",
-				"[resourceId('Microsoft.Storage/storageAccounts', concat('storageaccountmodule1', parameters('suffix')))]"
+				"[resourceId('Microsoft.Storage/storageAccounts/blobServices', concat('adlsmodule1', parameters('suffix')), 'default')]",
+				"[resourceId('Microsoft.Storage/storageAccounts', concat('adlsmodule1', parameters('suffix')))]"
 				]
 			},
 			{
@@ -545,11 +545,11 @@
 			  "apiVersion": "2021-11-01-preview",
 			  "name": "[concat('module1-kv-', parameters('suffix'), '/ADLSKey')]",
 			  "properties": {
-				"value": "[listKeys(resourceId('Microsoft.Storage/storageAccounts', concat('storageaccountmodule1', parameters('suffix'))), providers('Microsoft.Storage', 'storageAccounts').apiVersions[0]).keys[0].value]"
+				"value": "[listKeys(resourceId('Microsoft.Storage/storageAccounts', concat('adlsmodule1', parameters('suffix'))), providers('Microsoft.Storage', 'storageAccounts').apiVersions[0]).keys[0].value]"
 			  },
 			  "dependsOn": [
 				"[resourceId('Microsoft.KeyVault/vaults', concat('module1-kv-', parameters('suffix')))]",
-				"[resourceId('Microsoft.Storage/storageAccounts', concat('storageaccountmodule1', parameters('suffix')))]"
+				"[resourceId('Microsoft.Storage/storageAccounts', concat('adlsmodule1', parameters('suffix')))]"
 				]
 			},
 			{
@@ -746,7 +746,7 @@
                 "annotations": [],
                 "type": "AzureBlobFS",
                 "typeProperties": {
-                    "url": "[concat('https://storageaccountmodule1', parameters('suffix'), '.dfs.core.windows.net/')]",
+                    "url": "[concat('https://adlsmodule1', parameters('suffix'), '.dfs.core.windows.net/')]",
                     "accountKey": {
                         "type": "AzureKeyVaultSecret",
                         "store": {
