@@ -43,7 +43,7 @@ azcopy copy './data/adventureworks/*' $destinationAdventureWorks --recursive
 
 Write-Information "Restoring AdventureWorks2022 database to SQL Server..."
 
-$SqlServer    = "sqlvm-" + $suffix.Substring(6) + ".westeurope.cloudapp.azure.com"
+$SqlServer    = "sqlvm-" + $suffix.Substring(4) + ".westeurope.cloudapp.azure.com"
 $adventureworksSasKey = New-AzureStorageContainerSASToken -Container "adventureworks" -Context $dataLakeContext -Permission rwdl
 
 $CredentialQuery = "CREATE CREDENTIAL [https://adlsmodule1" + $suffix + ".blob.core.windows.net/adventureworks]
