@@ -49,6 +49,6 @@ WITH IDENTITY='SHARED ACCESS SIGNATURE', SECRET = '" + $adventureworksSasKey.Sub
 
 Invoke-Sqlcmd  -ConnectionString "Data Source=$SqlServer; User Id=$AdminUser; Password =$AdminPassword" -Query $CredentialQuery
 
-$RestoreQuery = "RESTORE DATABASE AdventureWorks FROM URL = 'https://storageaccountmodule1" + $suffix + ".blob.core.windows.net/adventureworks/AdventureWorks2022.bak'"
+$RestoreQuery = "RESTORE DATABASE AdventureWorks FROM URL = 'https://storageaccountmodule1" + $suffix + ".blob.core.windows.net/adventureworks/AdventureWorksLT2022.bak'"
    
 Invoke-Sqlcmd  -ConnectionString "Data Source=$SqlServer; User Id=$AdminUser; Password =$AdminPassword" -Query $RestoreQuery
