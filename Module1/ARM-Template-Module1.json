@@ -25,7 +25,8 @@
     },
 	"variables": {
 		"factoryName": "[concat('datafactory-module1-', parameters('suffix'))]",
-        "factoryId": "[concat('Microsoft.DataFactory/factories/', 'datafactory-module1-', parameters('suffix'))]"
+        "factoryId": "[concat('Microsoft.DataFactory/factories/', 'datafactory-module1-', parameters('suffix'))]",
+		"sqlvm-suffix": "[substring(parameters('suffix'),10)]"
     },
 	"resources": [
     {
@@ -320,8 +321,8 @@
 			  "properties": {
 				"publicIPAllocationMethod": "Static",
 				"dnsSettings": {
-                    "domainNameLabel": "[concat('sqlvm-', parameters('suffix'))]",
-                    "fqdn": "[concat('sqlvm-', parameters('suffix'), '.westeurope.cloudapp.azure.com')]"
+                    "domainNameLabel": "[concat('sqlvm-', variables('sqlvm-suffix'))]",
+                    "fqdn": "[concat('sqlvm-', variables('sqlvm-suffix'), '.westeurope.cloudapp.azure.com')]"
                 }
 			  }
 			},
@@ -359,7 +360,7 @@
 			{
 			  "type": "Microsoft.Compute/virtualMachines",
 			  "apiVersion": "2023-03-01",
-			  "name": "[concat('sqlvm-', parameters('suffix'))]",
+			  "name": "[concat('sqlvm-', variables('sqlvm-suffix'))]",
 			  "location": "[resourceGroup().location]",
 			  "properties": {
                 "hardwareProfile": {
@@ -382,7 +383,7 @@
 				  ]
 				},
 				 "osProfile": {
-					 "computerName": "[concat('sqlvm-', parameters('suffix'))]",
+					 "computerName": "[concat('sqlvm-', variables('sqlvm-suffix'))]",
 					  "adminUsername": "[parameters('AdminUser')]",
 					  "adminPassword": "[parameters('AdminPassword')]"
 				 }
@@ -394,12 +395,12 @@
 			{
 			  "type": "Microsoft.SqlVirtualMachine/sqlVirtualMachines",
 			  "apiVersion": "2022-08-01-preview",
-			  "name": "[concat('sqlvm-', parameters('suffix'))]",
+			  "name": "[concat('sqlvm-', variables('sqlvm-suffix'))]",
 			  "location": "[resourceGroup().location]",
 			  "properties": {
 				  "sqlImageOffer": "SQL2022-WS2022",
 				  "sqlImageSku": "Developer",
-				  "virtualMachineResourceId":"[resourceId('Microsoft.Compute/virtualMachines', concat('sqlvm-', parameters('suffix')))]",
+				  "virtualMachineResourceId":"[resourceId('Microsoft.Compute/virtualMachines', concat('sqlvm-', variables('sqlvm-suffix')))]",
 				  "ServerConfigurationsManagementSettings": {
                     "SQLConnectivityUpdateSettings": {
                         "ConnectivityType": "Private",
@@ -410,7 +411,7 @@
                 }
 			  },
 			  "dependsOn": [
-				"[resourceId('Microsoft.Compute/virtualMachines', concat('sqlvm-', parameters('suffix')))]"
+				"[resourceId('Microsoft.Compute/virtualMachines', concat('sqlvm-', variables('sqlvm-suffix')))]"
 				]
 			},
 			{
@@ -635,7 +636,7 @@
 			  "apiVersion": "2021-11-01-preview",
 			  "name": "[concat('module1-kv-', parameters('suffix'), '/sqlvmAdventureWorksConnectionString')]",
 			  "properties": {
-				"value": "[concat('integrated security=False;data source=sqlvm-', parameters('suffix'), ';initial catalog=AdventureWorks;user id=', parameters('AdminUser'), ';Password=', parameters('AdminPassword'), ';')]"
+				"value": "[concat('integrated security=False;data source=sqlvm-', variables('sqlvm-suffix'), ';initial catalog=AdventureWorks;user id=', parameters('AdminUser'), ';Password=', parameters('AdminPassword'), ';')]"
 			  },
 			  "dependsOn": [
 				"[resourceId('Microsoft.KeyVault/vaults', concat('module1-kv-', parameters('suffix')))]"
