@@ -221,7 +221,30 @@
 			  "type": "Microsoft.Network/networkSecurityGroups",
 			  "apiVersion": "2022-01-01",
 			  "name": "[concat('sqlvm-nsg-', parameters('suffix'))]",
-			  "location": "[resourceGroup().location]"
+			  "location": "[resourceGroup().location]",
+			  "properties": {
+                "securityRules": [
+                    {
+                        "name": "AllowAnyCustom1433Inbound",
+                        "id": "[resourceId('Microsoft.Network/networkSecurityGroups/securityRules', concat('sqlvm-nsg-', parameters('suffix')), 'AllowAnyCustom1433Inbound')]",
+                        "type": "Microsoft.Network/networkSecurityGroups/securityRules",
+                        "properties": {
+                            "protocol": "*",
+                            "sourcePortRange": "*",
+                            "destinationPortRange": "1433",
+                            "sourceAddressPrefix": "*",
+                            "destinationAddressPrefix": "*",
+                            "access": "Allow",
+                            "priority": 100,
+                            "direction": "Inbound",
+                            "sourcePortRanges": [],
+                            "destinationPortRanges": [],
+                            "sourceAddressPrefixes": [],
+                            "destinationAddressPrefixes": []
+                        }
+                    }
+                ]
+				}
 			},
 			{
 			  "type": "Microsoft.Network/virtualNetworks",
