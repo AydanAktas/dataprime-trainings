@@ -22,7 +22,7 @@ $result = New-AzResourceGroupDeployment -Verbose `
   -adminpassword $SecurePassword `
   -TemplateFile ARM-Template-Module1.json
   
-$suffix = $result.parameters('suffix')
+$suffix = $result.Parameters.suffix.value
   
 Write-Information "All the resources deployed..."
 
