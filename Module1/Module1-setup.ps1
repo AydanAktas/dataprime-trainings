@@ -28,14 +28,16 @@ $dataLakeAccountName = "storageaccountmodule1" + $suffix
 $dataLakeStorageUrl = "https://" + $dataLakeAccountName + ".dfs.core.windows.net/"
 $dataLakeStorageAccountKey = (Get-AzStorageAccountKey -ResourceGroupName $resourceGroupName -AccountName $dataLakeAccountName)[0].Value
 $dataLakeContext = New-AzureStorageContext -StorageAccountName $dataLakeAccountName -StorageAccountKey $dataLakeStorageAccountKey
-$destinationSasKey = New-AzureStorageContainerSASToken -Container "hrfiles" -Context $dataLakeContext -Permission rwdl
-$destination = $dataLakeStorageUrl + "hrfiles" + $destinationSasKey
+$HrFilesSasKey = New-AzureStorageContainerSASToken -Container "hrfiles" -Context $dataLakeContext -Permission rwdl
+$destinationHrFiles = $dataLakeStorageUrl + "hrfiles" + $HrFilesSasKey
+$AdventureWorksSasKey = New-AzureStorageContainerSASToken -Container "adventureworks" -Context $dataLakeContext -Permission rwdl
+$destinationAdventureWorks = $dataLakeStorageUrl + "adventureworks" + $AdventureWorksSasKey
 
 Write-Information "Loading the data into the storage account..."
 
-azcopy copy './data/hrfiles/*' $destination --recursive
+azcopy copy './data/hrfiles/*' $destinationHrFiles --recursive
 
-azcopy copy './data/adventureworks/*' $destination --recursive
+azcopy copy './data/adventureworks/*' $destinationAdventureWorks --recursive
 
 Write-Information "Restoring AdventureWorks2022 database to SQL Server..."
 
