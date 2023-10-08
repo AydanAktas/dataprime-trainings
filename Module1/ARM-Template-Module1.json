@@ -26,7 +26,7 @@
 	"variables": {
 		"factoryName": "[concat('datafactory-module1-', parameters('suffix'))]",
         "factoryId": "[concat('Microsoft.DataFactory/factories/', 'datafactory-module1-', parameters('suffix'))]",
-		"sqlvm-suffix": "[substring(parameters('suffix'),10)]"
+		"sqlvm-suffix": "[substring(parameters('suffix'),6)]"
     },
 	"resources": [
     {
