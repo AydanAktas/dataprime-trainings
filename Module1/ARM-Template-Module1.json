@@ -276,7 +276,11 @@
 				"name": "Standard"
 			  },
 			  "properties": {
-				"publicIPAllocationMethod": "Static"
+				"publicIPAllocationMethod": "Static",
+				"dnsSettings": {
+                    "domainNameLabel": "[concat('sqlvm-', parameters('suffix'))]",
+                    "fqdn": "[concat('sqlvm-', parameters('suffix'), '.westeurope.cloudapp.azure.com')]"
+                },
 			  }
 			},
 			{
