@@ -47,8 +47,8 @@ $adventureworksSasKey = New-AzureStorageContainerSASToken -Container "adventurew
 $CredentialQuery = "CREATE CREDENTIAL [https://storageaccountmodule1" + $suffix + ".blob.core.windows.net/adventureworks]
 WITH IDENTITY='SHARED ACCESS SIGNATURE', SECRET = '" + $adventureworksSasKey.Substring(1) + "'"
 
-Invoke-Sqlcmd  -ConnectionString "Data Source=$SqlServer; User Id=$AdminUser; Password =$AdminPassword" -Query $CredentialQuery
+Invoke-Sqlcmd  -ConnectionString "Data Source=$SqlServer; User Id=$AdminUser; Password =$AdminPassword; TrustServerCertificate=true" -Query $CredentialQuery
 
 $RestoreQuery = "RESTORE DATABASE AdventureWorks FROM URL = 'https://storageaccountmodule1" + $suffix + ".blob.core.windows.net/adventureworks/AdventureWorksLT2022.bak'"
    
-Invoke-Sqlcmd  -ConnectionString "Data Source=$SqlServer; User Id=$AdminUser; Password =$AdminPassword" -Query $RestoreQuery
+Invoke-Sqlcmd  -ConnectionString "Data Source=$SqlServer; User Id=$AdminUser; Password =$AdminPassword; TrustServerCertificate=true" -Query $RestoreQuery
