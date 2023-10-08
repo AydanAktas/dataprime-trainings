@@ -1,6 +1,6 @@
 Clone the git repository
 ```sh
-git clone https://github.com/AydanAktas/dataprime-trainings/dataprime-trainings
+git clone https://github.com/AydanAktas/dataprime-trainings
 ```
 
 Navigate to the Module1 folder
