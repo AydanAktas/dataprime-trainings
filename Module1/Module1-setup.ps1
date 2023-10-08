@@ -2,8 +2,8 @@ param(
      [Parameter()]
      [string]$resourceGroupName,
 
-     [Parameter()]
-     [string]$suffix,
+     #[Parameter()]
+     #[string]$suffix,
 	 
 	 [Parameter()]
      [string]$AdminUser,
@@ -14,7 +14,7 @@ param(
 
 $SecurePassword = ConvertTo-SecureString $AdminPassword -AsPlainText -Force
 
-New-AzResourceGroupDeployment `
+New-AzResourceGroupDeployment -Verbose `
   -Name "Module1-Deployment" `
   -ResourceGroupName $resourceGroupName `
   -suffix $suffix `
@@ -24,7 +24,7 @@ New-AzResourceGroupDeployment `
   
 Write-Information "All the resources deployed..."
 
-$dataLakeAccountName = "storageaccountmodule1" + $suffix
+$dataLakeAccountName = "adlsmodule1" + $suffix
 $dataLakeStorageUrl = "https://" + $dataLakeAccountName + ".dfs.core.windows.net/"
 $dataLakeStorageAccountKey = (Get-AzStorageAccountKey -ResourceGroupName $resourceGroupName -AccountName $dataLakeAccountName)[0].Value
 $dataLakeContext = New-AzureStorageContext -StorageAccountName $dataLakeAccountName -StorageAccountKey $dataLakeStorageAccountKey
@@ -44,11 +44,11 @@ Write-Information "Restoring AdventureWorks2022 database to SQL Server..."
 $SqlServer    = "sqlvm-" + $suffix + ".westeurope.cloudapp.azure.com"
 $adventureworksSasKey = New-AzureStorageContainerSASToken -Container "adventureworks" -Context $dataLakeContext -Permission rwdl
 
-$CredentialQuery = "CREATE CREDENTIAL [https://storageaccountmodule1" + $suffix + ".blob.core.windows.net/adventureworks]
+$CredentialQuery = "CREATE CREDENTIAL [https://adlsmodule1" + $suffix + ".blob.core.windows.net/adventureworks]
 WITH IDENTITY='SHARED ACCESS SIGNATURE', SECRET = '" + $adventureworksSasKey.Substring(1) + "'"
 
 Invoke-Sqlcmd  -ConnectionString "Data Source=$SqlServer; User Id=$AdminUser; Password =$AdminPassword; TrustServerCertificate=true" -Query $CredentialQuery
 
-$RestoreQuery = "RESTORE DATABASE AdventureWorks FROM URL = 'https://storageaccountmodule1" + $suffix + ".blob.core.windows.net/adventureworks/AdventureWorksLT2022.bak'"
+$RestoreQuery = "RESTORE DATABASE AdventureWorks FROM URL = 'https://adlsmodule1" + $suffix + ".blob.core.windows.net/adventureworks/AdventureWorksLT2022.bak'"
    
 Invoke-Sqlcmd  -ConnectionString "Data Source=$SqlServer; User Id=$AdminUser; Password =$AdminPassword; TrustServerCertificate=true" -Query $RestoreQuery
