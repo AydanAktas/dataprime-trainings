@@ -490,6 +490,14 @@
 					{
 					  "name": "WEBSITE_NODE_DEFAULT_VERSION",
 					  "value": "~14"
+					},
+					{
+					  "name": "cosmosEndPoint",
+					  "value": "[concat('https://cosmosdb-module1-', parameters('suffix'), '.documents.azure.com:443/')]"
+					},
+					{
+					  "name": "cosmosMasterKey",
+					  "value": "[listKeys(resourceId('Microsoft.DocumentDB/databaseAccounts', concat('cosmosdb-module1-', parameters('suffix'))), providers('Microsoft.DocumentDB', 'databaseAccounts').apiVersions[0]).keys[0].value]"
 					}
 				  ]
 				}
@@ -497,7 +505,8 @@
 			  "dependsOn": [
 				"[resourceId('Microsoft.Web/serverfarms', concat('ASP-dataprimetrainingmodule1-', parameters('suffix')))]",
 				"[resourceId('Microsoft.Storage/storageAccounts', concat('appstorage', parameters('suffix')))]",
-				"[resourceId('Microsoft.Insights/components', concat('dataprime-module1-cosmosauth-', parameters('suffix')))]"
+				"[resourceId('Microsoft.Insights/components', concat('dataprime-module1-cosmosauth-', parameters('suffix')))]",
+				"[resourceId('Microsoft.DocumentDB/databaseAccounts', concat('cosmosdb-module1-', parameters('suffix')))]"
 			  ]
 			},
 			{
