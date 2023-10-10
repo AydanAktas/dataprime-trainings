@@ -497,7 +497,7 @@
 					},
 					{
 					  "name": "cosmosMasterKey",
-					  "value": "[listKeys(resourceId('Microsoft.DocumentDB/databaseAccounts', concat('cosmosdb-module1-', parameters('suffix'))), providers('Microsoft.DocumentDB', 'databaseAccounts').apiVersions[0]).keys[0].value]"
+					  "value": "[listKeys(resourceId('Microsoft.DocumentDB/databaseAccounts', concat('cosmosdb-module1-', parameters('suffix'))), providers('Microsoft.DocumentDB', 'databaseAccounts').apiVersions[0]).primaryMasterKey.value]"
 					}
 				  ]
 				}
