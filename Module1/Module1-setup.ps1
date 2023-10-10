@@ -62,4 +62,6 @@ $RestoreQuery = "RESTORE DATABASE AdventureWorks FROM URL = 'https://adlsmodule1
    
 Invoke-Sqlcmd  -ConnectionString "Data Source=$SqlServer; User Id=$AdminUser; Password =$AdminPassword; TrustServerCertificate=true" -Query $RestoreQuery
 
-Publish-AzWebapp -ResourceGroupName $resourceGroupName -Name 'dataprime-module1-cosmosauth-' + $suffix -ArchivePath 'FunctionApp/dataprime-module1-cosmosauth.zip' -force
+$FunctionAppName = 'dataprime-module1-cosmosauth-' + $suffix
+
+Publish-AzWebapp -ResourceGroupName $resourceGroupName -Name $FunctionAppName -ArchivePath 'FunctionApp/dataprime-module1-cosmosauth.zip' -force
