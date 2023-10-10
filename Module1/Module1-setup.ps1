@@ -50,7 +50,9 @@ azcopy copy './data/adventureworks/*' $destinationAdventureWorks --recursive
 
 Write-Information "Restoring AdventureWorks2022 database to SQL Server..."
 
-$SqlServer    = "sqlvm-" + $suffix.Substring(4) + ".westeurope.cloudapp.azure.com"
+$resourceGroup = Get-AzResourceGroup -Name $resourceGroupName
+
+$SqlServer    = "sqlvm-" + $suffix.Substring(4) + "." + $resourceGroup.Location + ".cloudapp.azure.com"
 $adventureworksSasKey = New-AzureStorageContainerSASToken -Container "adventureworks" -Context $dataLakeContext -Permission rwdl
 
 $CredentialQuery = "CREATE CREDENTIAL [https://adlsmodule1" + $suffix + ".blob.core.windows.net/adventureworks]
@@ -65,3 +67,14 @@ Invoke-Sqlcmd  -ConnectionString "Data Source=$SqlServer; User Id=$AdminUser; Pa
 $FunctionAppName = 'dataprime-module1-cosmosauth-' + $suffix
 
 Publish-AzWebapp -ResourceGroupName $resourceGroupName -Name $FunctionAppName -ArchivePath 'FunctionApp/dataprime-module1-cosmosauth.zip' -force
+
+Install-Module -Name CosmosDB -force
+
+$json = Get-Content 'data/CosmosDB/Address.json' | Out-String | ConvertFrom-Json
+$cosmosDbAccountName = 'cosmosdb-module1-' + $suffix
+$cosmosDbContext = New-CosmosDbContext -Account $cosmosDbAccountName -Database 'Address' -ResourceGroup $resourceGroupName
+
+foreach($item in $json){ `
+    $document = $item | ConvertTo-Json | Out-String ` 
+    New-CosmosDbDocument -Context $cosmosDbContext -CollectionId 'Address' -DocumentBody $document -PartitionKey $item.PostalCode `
+}
