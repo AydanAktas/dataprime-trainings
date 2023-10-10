@@ -1,6 +1,9 @@
 param(
      [Parameter()]
      [string]$resourceGroupName,
+	 
+	 [Parameter()]
+     [string]$location,
 
      #[Parameter()]
      #[string]$suffix,
@@ -11,6 +14,10 @@ param(
      [Parameter()]
      [string]$AdminPassword
  )
+ 
+Get-AzResourceGroup -Name $resourceGroupName -ErrorVariable notPresent -ErrorAction SilentlyContinue
+
+if ($notPresent) {New-AzResourceGroup -Name $resourceGroupName -Location $location} 
 
 $SecurePassword = ConvertTo-SecureString $AdminPassword -AsPlainText -Force
 
