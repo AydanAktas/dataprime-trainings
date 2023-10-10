@@ -24,4 +24,4 @@ password: Admin password of the sql servers
 Example:
 ```sh
 ./Module1-setup.ps1 'dataprime-training-module1' 'West Europe' 'sqladminuser' 'Password!0'
-```sh
+```
