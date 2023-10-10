@@ -1002,7 +1002,7 @@
                                             "path": "[['AddressID']"
                                         },
                                         "sink": {
-                                            "path": "AdressID"
+                                            "path": "AddressID"
                                         }
                                     },
                                     {
@@ -2653,7 +2653,7 @@
                 "annotations": [],
                 "type": "RestResource",
                 "typeProperties": {
-                    "relativeUrl": "dbs/Adress/colls/Adress/docs"
+                    "relativeUrl": "dbs/Address/colls/Address/docs"
                 },
                 "schema": []
             },
