@@ -68,13 +68,21 @@ $FunctionAppName = 'dataprime-module1-cosmosauth-' + $suffix
 
 Publish-AzWebapp -ResourceGroupName $resourceGroupName -Name $FunctionAppName -ArchivePath 'FunctionApp/dataprime-module1-cosmosauth.zip' -force
 
-Install-Module -Name CosmosDB -force
-
-$json = Get-Content 'data/CosmosDB/Address.json' | Out-String | ConvertFrom-Json
 $cosmosDbAccountName = 'cosmosdb-module1-' + $suffix
-$cosmosDbContext = New-CosmosDbContext -Account $cosmosDbAccountName -Database 'Address' -ResourceGroup $resourceGroupName
+$CosmosDbEndpoint = 'https://cosmosdb-module1-' + $suffix + '.documents.azure.com:443/'
+$CosmosDbKey = (Get-AzCosmosDBAccountKey -ResourceGroupName $resourceGroupName -Name $cosmosDbAccountName -Type "Keys").PrimaryMasterKey
 
-foreach($item in $json){ `
-    $document = $item | ConvertTo-Json | Out-String ` 
-    New-CosmosDbDocument -Context $cosmosDbContext -CollectionId 'Address' -DocumentBody $document -PartitionKey $item.PostalCode `
-}
+cd CosmosDB-load
+
+dotnet run $CosmosDbEndpoint $CosmosDbKey
+
+#Install-Module -Name CosmosDB -force
+
+#$json = Get-Content 'data/CosmosDB/Address.json' | Out-String | ConvertFrom-Json
+#$cosmosDbAccountName = 'cosmosdb-module1-' + $suffix
+#$cosmosDbContext = New-CosmosDbContext -Account $cosmosDbAccountName -Database 'Address' -ResourceGroup $resourceGroupName
+
+#foreach($item in $json){ `
+#    $document = $item | ConvertTo-Json | Out-String ` 
+#    New-CosmosDbDocument -Context $cosmosDbContext -CollectionId 'Address' -DocumentBody $document -PartitionKey $item.PostalCode `
+#}
