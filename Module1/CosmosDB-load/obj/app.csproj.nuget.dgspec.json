@@ -1,0 +1,73 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\aydanaktas\\OneDrive - Microsoft\\Desktop\\Microsoft - NL\\Customers\\Heineken\\Data Prime trainings\\CosmosDB-load\\app.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\aydanaktas\\OneDrive - Microsoft\\Desktop\\Microsoft - NL\\Customers\\Heineken\\Data Prime trainings\\CosmosDB-load\\app.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\aydanaktas\\OneDrive - Microsoft\\Desktop\\Microsoft - NL\\Customers\\Heineken\\Data Prime trainings\\CosmosDB-load\\app.csproj",
+        "projectName": "app",
+        "projectPath": "C:\\Users\\aydanaktas\\OneDrive - Microsoft\\Desktop\\Microsoft - NL\\Customers\\Heineken\\Data Prime trainings\\CosmosDB-load\\app.csproj",
+        "packagesPath": "C:\\Users\\aydanaktas\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\aydanaktas\\OneDrive - Microsoft\\Desktop\\Microsoft - NL\\Customers\\Heineken\\Data Prime trainings\\CosmosDB-load\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\aydanaktas\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Bogus": {
+              "target": "Package",
+              "version": "[33.1.1, )"
+            },
+            "Microsoft.Azure.Cosmos": {
+              "target": "Package",
+              "version": "[3.22.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.402\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
