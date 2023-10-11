@@ -1,0 +1,120 @@
+C:\Users\aydanaktas\OneDrive - Microsoft\Desktop\Microsoft - NL\Cosmos DB\Learning Path\dp-420-cosmos-db-dev\08-sdk-bulk\bin\Debug\net6.0\Microsoft.Azure.Cosmos.ServiceInterop.dll
+C:\Users\aydanaktas\OneDrive - Microsoft\Desktop\Microsoft - NL\Cosmos DB\Learning Path\dp-420-cosmos-db-dev\08-sdk-bulk\bin\Debug\net6.0\Cosmos.CRTCompat.dll
+C:\Users\aydanaktas\OneDrive - Microsoft\Desktop\Microsoft - NL\Cosmos DB\Learning Path\dp-420-cosmos-db-dev\08-sdk-bulk\bin\Debug\net6.0\app.exe
+C:\Users\aydanaktas\OneDrive - Microsoft\Desktop\Microsoft - NL\Cosmos DB\Learning Path\dp-420-cosmos-db-dev\08-sdk-bulk\bin\Debug\net6.0\app.deps.json
+C:\Users\aydanaktas\OneDrive - Microsoft\Desktop\Microsoft - NL\Cosmos DB\Learning Path\dp-420-cosmos-db-dev\08-sdk-bulk\bin\Debug\net6.0\app.runtimeconfig.json
+C:\Users\aydanaktas\OneDrive - Microsoft\Desktop\Microsoft - NL\Cosmos DB\Learning Path\dp-420-cosmos-db-dev\08-sdk-bulk\bin\Debug\net6.0\app.dll
+C:\Users\aydanaktas\OneDrive - Microsoft\Desktop\Microsoft - NL\Cosmos DB\Learning Path\dp-420-cosmos-db-dev\08-sdk-bulk\bin\Debug\net6.0\app.pdb
+C:\Users\aydanaktas\OneDrive - Microsoft\Desktop\Microsoft - NL\Cosmos DB\Learning Path\dp-420-cosmos-db-dev\08-sdk-bulk\bin\Debug\net6.0\Azure.Core.dll
+C:\Users\aydanaktas\OneDrive - Microsoft\Desktop\Microsoft - NL\Cosmos DB\Learning Path\dp-420-cosmos-db-dev\08-sdk-bulk\bin\Debug\net6.0\Bogus.dll
+C:\Users\aydanaktas\OneDrive - Microsoft\Desktop\Microsoft - NL\Cosmos DB\Learning Path\dp-420-cosmos-db-dev\08-sdk-bulk\bin\Debug\net6.0\Microsoft.Azure.Cosmos.Client.dll
+C:\Users\aydanaktas\OneDrive - Microsoft\Desktop\Microsoft - NL\Cosmos DB\Learning Path\dp-420-cosmos-db-dev\08-sdk-bulk\bin\Debug\net6.0\Microsoft.Azure.Cosmos.Core.dll
+C:\Users\aydanaktas\OneDrive - Microsoft\Desktop\Microsoft - NL\Cosmos DB\Learning Path\dp-420-cosmos-db-dev\08-sdk-bulk\bin\Debug\net6.0\Microsoft.Azure.Cosmos.Direct.dll
+C:\Users\aydanaktas\OneDrive - Microsoft\Desktop\Microsoft - NL\Cosmos DB\Learning Path\dp-420-cosmos-db-dev\08-sdk-bulk\bin\Debug\net6.0\Microsoft.Azure.Cosmos.Serialization.HybridRow.dll
+C:\Users\aydanaktas\OneDrive - Microsoft\Desktop\Microsoft - NL\Cosmos DB\Learning Path\dp-420-cosmos-db-dev\08-sdk-bulk\bin\Debug\net6.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\aydanaktas\OneDrive - Microsoft\Desktop\Microsoft - NL\Cosmos DB\Learning Path\dp-420-cosmos-db-dev\08-sdk-bulk\bin\Debug\net6.0\Microsoft.Bcl.HashCode.dll
+C:\Users\aydanaktas\OneDrive - Microsoft\Desktop\Microsoft - NL\Cosmos DB\Learning Path\dp-420-cosmos-db-dev\08-sdk-bulk\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\aydanaktas\OneDrive - Microsoft\Desktop\Microsoft - NL\Cosmos DB\Learning Path\dp-420-cosmos-db-dev\08-sdk-bulk\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\Users\aydanaktas\OneDrive - Microsoft\Desktop\Microsoft - NL\Cosmos DB\Learning Path\dp-420-cosmos-db-dev\08-sdk-bulk\bin\Debug\net6.0\System.Configuration.ConfigurationManager.dll
+C:\Users\aydanaktas\OneDrive - Microsoft\Desktop\Microsoft - NL\Cosmos DB\Learning Path\dp-420-cosmos-db-dev\08-sdk-bulk\bin\Debug\net6.0\System.Drawing.Common.dll
+C:\Users\aydanaktas\OneDrive - Microsoft\Desktop\Microsoft - NL\Cosmos DB\Learning Path\dp-420-cosmos-db-dev\08-sdk-bulk\bin\Debug\net6.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\aydanaktas\OneDrive - Microsoft\Desktop\Microsoft - NL\Cosmos DB\Learning Path\dp-420-cosmos-db-dev\08-sdk-bulk\bin\Debug\net6.0\System.Security.Permissions.dll
+C:\Users\aydanaktas\OneDrive - Microsoft\Desktop\Microsoft - NL\Cosmos DB\Learning Path\dp-420-cosmos-db-dev\08-sdk-bulk\bin\Debug\net6.0\System.Windows.Extensions.dll
+C:\Users\aydanaktas\OneDrive - Microsoft\Desktop\Microsoft - NL\Cosmos DB\Learning Path\dp-420-cosmos-db-dev\08-sdk-bulk\bin\Debug\net6.0\runtimes\win-x64\native\Cosmos.CRTCompat.dll
+C:\Users\aydanaktas\OneDrive - Microsoft\Desktop\Microsoft - NL\Cosmos DB\Learning Path\dp-420-cosmos-db-dev\08-sdk-bulk\bin\Debug\net6.0\runtimes\win-x64\native\Microsoft.Azure.Cosmos.ServiceInterop.dll
+C:\Users\aydanaktas\OneDrive - Microsoft\Desktop\Microsoft - NL\Cosmos DB\Learning Path\dp-420-cosmos-db-dev\08-sdk-bulk\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\aydanaktas\OneDrive - Microsoft\Desktop\Microsoft - NL\Cosmos DB\Learning Path\dp-420-cosmos-db-dev\08-sdk-bulk\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\aydanaktas\OneDrive - Microsoft\Desktop\Microsoft - NL\Cosmos DB\Learning Path\dp-420-cosmos-db-dev\08-sdk-bulk\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\aydanaktas\OneDrive - Microsoft\Desktop\Microsoft - NL\Cosmos DB\Learning Path\dp-420-cosmos-db-dev\08-sdk-bulk\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\aydanaktas\OneDrive - Microsoft\Desktop\Microsoft - NL\Cosmos DB\Learning Path\dp-420-cosmos-db-dev\08-sdk-bulk\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+C:\Users\aydanaktas\OneDrive - Microsoft\Desktop\Microsoft - NL\Cosmos DB\Learning Path\dp-420-cosmos-db-dev\08-sdk-bulk\obj\Debug\net6.0\app.csproj.AssemblyReference.cache
+C:\Users\aydanaktas\OneDrive - Microsoft\Desktop\Microsoft - NL\Cosmos DB\Learning Path\dp-420-cosmos-db-dev\08-sdk-bulk\obj\Debug\net6.0\app.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\aydanaktas\OneDrive - Microsoft\Desktop\Microsoft - NL\Cosmos DB\Learning Path\dp-420-cosmos-db-dev\08-sdk-bulk\obj\Debug\net6.0\app.AssemblyInfoInputs.cache
+C:\Users\aydanaktas\OneDrive - Microsoft\Desktop\Microsoft - NL\Cosmos DB\Learning Path\dp-420-cosmos-db-dev\08-sdk-bulk\obj\Debug\net6.0\app.AssemblyInfo.cs
+C:\Users\aydanaktas\OneDrive - Microsoft\Desktop\Microsoft - NL\Cosmos DB\Learning Path\dp-420-cosmos-db-dev\08-sdk-bulk\obj\Debug\net6.0\app.csproj.CoreCompileInputs.cache
+C:\Users\aydanaktas\OneDrive - Microsoft\Desktop\Microsoft - NL\Cosmos DB\Learning Path\dp-420-cosmos-db-dev\08-sdk-bulk\obj\Debug\net6.0\app.csproj.CopyComplete
+C:\Users\aydanaktas\OneDrive - Microsoft\Desktop\Microsoft - NL\Cosmos DB\Learning Path\dp-420-cosmos-db-dev\08-sdk-bulk\obj\Debug\net6.0\app.dll
+C:\Users\aydanaktas\OneDrive - Microsoft\Desktop\Microsoft - NL\Cosmos DB\Learning Path\dp-420-cosmos-db-dev\08-sdk-bulk\obj\Debug\net6.0\refint\app.dll
+C:\Users\aydanaktas\OneDrive - Microsoft\Desktop\Microsoft - NL\Cosmos DB\Learning Path\dp-420-cosmos-db-dev\08-sdk-bulk\obj\Debug\net6.0\app.pdb
+C:\Users\aydanaktas\OneDrive - Microsoft\Desktop\Microsoft - NL\Cosmos DB\Learning Path\dp-420-cosmos-db-dev\08-sdk-bulk\obj\Debug\net6.0\app.genruntimeconfig.cache
+C:\Users\aydanaktas\OneDrive - Microsoft\Desktop\Microsoft - NL\Cosmos DB\Learning Path\dp-420-cosmos-db-dev\08-sdk-bulk\obj\Debug\net6.0\ref\app.dll
+C:\Users\aydanaktas\OneDrive - Microsoft\Desktop\Microsoft - NL\Cosmos DB\Learning Path\dp-420-cosmos-db-dev\08-sdk-bulk copy\obj\Debug\net6.0\app.csproj.AssemblyReference.cache
+C:\Users\aydanaktas\OneDrive - Microsoft\Desktop\Microsoft - NL\Cosmos DB\Learning Path\dp-420-cosmos-db-dev\08-sdk-bulk copy\obj\Debug\net6.0\app.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\aydanaktas\OneDrive - Microsoft\Desktop\Microsoft - NL\Cosmos DB\Learning Path\dp-420-cosmos-db-dev\08-sdk-bulk copy\obj\Debug\net6.0\app.AssemblyInfoInputs.cache
+C:\Users\aydanaktas\OneDrive - Microsoft\Desktop\Microsoft - NL\Cosmos DB\Learning Path\dp-420-cosmos-db-dev\08-sdk-bulk copy\obj\Debug\net6.0\app.AssemblyInfo.cs
+C:\Users\aydanaktas\OneDrive - Microsoft\Desktop\Microsoft - NL\Cosmos DB\Learning Path\dp-420-cosmos-db-dev\08-sdk-bulk copy\obj\Debug\net6.0\app.csproj.CoreCompileInputs.cache
+C:\Users\aydanaktas\OneDrive - Microsoft\Desktop\Microsoft - NL\Cosmos DB\Learning Path\dp-420-cosmos-db-dev\08-sdk-bulk copy\obj\Debug\net6.0\app.dll
+C:\Users\aydanaktas\OneDrive - Microsoft\Desktop\Microsoft - NL\Cosmos DB\Learning Path\dp-420-cosmos-db-dev\08-sdk-bulk copy\obj\Debug\net6.0\refint\app.dll
+C:\Users\aydanaktas\OneDrive - Microsoft\Desktop\Microsoft - NL\Cosmos DB\Learning Path\dp-420-cosmos-db-dev\08-sdk-bulk copy\obj\Debug\net6.0\app.pdb
+C:\Users\aydanaktas\OneDrive - Microsoft\Desktop\Microsoft - NL\Cosmos DB\Learning Path\dp-420-cosmos-db-dev\08-sdk-bulk copy\bin\Debug\net6.0\Microsoft.Azure.Cosmos.ServiceInterop.dll
+C:\Users\aydanaktas\OneDrive - Microsoft\Desktop\Microsoft - NL\Cosmos DB\Learning Path\dp-420-cosmos-db-dev\08-sdk-bulk copy\bin\Debug\net6.0\Cosmos.CRTCompat.dll
+C:\Users\aydanaktas\OneDrive - Microsoft\Desktop\Microsoft - NL\Cosmos DB\Learning Path\dp-420-cosmos-db-dev\08-sdk-bulk copy\bin\Debug\net6.0\app.exe
+C:\Users\aydanaktas\OneDrive - Microsoft\Desktop\Microsoft - NL\Cosmos DB\Learning Path\dp-420-cosmos-db-dev\08-sdk-bulk copy\bin\Debug\net6.0\app.deps.json
+C:\Users\aydanaktas\OneDrive - Microsoft\Desktop\Microsoft - NL\Cosmos DB\Learning Path\dp-420-cosmos-db-dev\08-sdk-bulk copy\bin\Debug\net6.0\app.runtimeconfig.json
+C:\Users\aydanaktas\OneDrive - Microsoft\Desktop\Microsoft - NL\Cosmos DB\Learning Path\dp-420-cosmos-db-dev\08-sdk-bulk copy\bin\Debug\net6.0\app.dll
+C:\Users\aydanaktas\OneDrive - Microsoft\Desktop\Microsoft - NL\Cosmos DB\Learning Path\dp-420-cosmos-db-dev\08-sdk-bulk copy\bin\Debug\net6.0\app.pdb
+C:\Users\aydanaktas\OneDrive - Microsoft\Desktop\Microsoft - NL\Cosmos DB\Learning Path\dp-420-cosmos-db-dev\08-sdk-bulk copy\bin\Debug\net6.0\Azure.Core.dll
+C:\Users\aydanaktas\OneDrive - Microsoft\Desktop\Microsoft - NL\Cosmos DB\Learning Path\dp-420-cosmos-db-dev\08-sdk-bulk copy\bin\Debug\net6.0\Bogus.dll
+C:\Users\aydanaktas\OneDrive - Microsoft\Desktop\Microsoft - NL\Cosmos DB\Learning Path\dp-420-cosmos-db-dev\08-sdk-bulk copy\bin\Debug\net6.0\Microsoft.Azure.Cosmos.Client.dll
+C:\Users\aydanaktas\OneDrive - Microsoft\Desktop\Microsoft - NL\Cosmos DB\Learning Path\dp-420-cosmos-db-dev\08-sdk-bulk copy\bin\Debug\net6.0\Microsoft.Azure.Cosmos.Core.dll
+C:\Users\aydanaktas\OneDrive - Microsoft\Desktop\Microsoft - NL\Cosmos DB\Learning Path\dp-420-cosmos-db-dev\08-sdk-bulk copy\bin\Debug\net6.0\Microsoft.Azure.Cosmos.Direct.dll
+C:\Users\aydanaktas\OneDrive - Microsoft\Desktop\Microsoft - NL\Cosmos DB\Learning Path\dp-420-cosmos-db-dev\08-sdk-bulk copy\bin\Debug\net6.0\Microsoft.Azure.Cosmos.Serialization.HybridRow.dll
+C:\Users\aydanaktas\OneDrive - Microsoft\Desktop\Microsoft - NL\Cosmos DB\Learning Path\dp-420-cosmos-db-dev\08-sdk-bulk copy\bin\Debug\net6.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\aydanaktas\OneDrive - Microsoft\Desktop\Microsoft - NL\Cosmos DB\Learning Path\dp-420-cosmos-db-dev\08-sdk-bulk copy\bin\Debug\net6.0\Microsoft.Bcl.HashCode.dll
+C:\Users\aydanaktas\OneDrive - Microsoft\Desktop\Microsoft - NL\Cosmos DB\Learning Path\dp-420-cosmos-db-dev\08-sdk-bulk copy\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\aydanaktas\OneDrive - Microsoft\Desktop\Microsoft - NL\Cosmos DB\Learning Path\dp-420-cosmos-db-dev\08-sdk-bulk copy\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\Users\aydanaktas\OneDrive - Microsoft\Desktop\Microsoft - NL\Cosmos DB\Learning Path\dp-420-cosmos-db-dev\08-sdk-bulk copy\bin\Debug\net6.0\System.Configuration.ConfigurationManager.dll
+C:\Users\aydanaktas\OneDrive - Microsoft\Desktop\Microsoft - NL\Cosmos DB\Learning Path\dp-420-cosmos-db-dev\08-sdk-bulk copy\bin\Debug\net6.0\System.Drawing.Common.dll
+C:\Users\aydanaktas\OneDrive - Microsoft\Desktop\Microsoft - NL\Cosmos DB\Learning Path\dp-420-cosmos-db-dev\08-sdk-bulk copy\bin\Debug\net6.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\aydanaktas\OneDrive - Microsoft\Desktop\Microsoft - NL\Cosmos DB\Learning Path\dp-420-cosmos-db-dev\08-sdk-bulk copy\bin\Debug\net6.0\System.Security.Permissions.dll
+C:\Users\aydanaktas\OneDrive - Microsoft\Desktop\Microsoft - NL\Cosmos DB\Learning Path\dp-420-cosmos-db-dev\08-sdk-bulk copy\bin\Debug\net6.0\System.Windows.Extensions.dll
+C:\Users\aydanaktas\OneDrive - Microsoft\Desktop\Microsoft - NL\Cosmos DB\Learning Path\dp-420-cosmos-db-dev\08-sdk-bulk copy\bin\Debug\net6.0\runtimes\win-x64\native\Cosmos.CRTCompat.dll
+C:\Users\aydanaktas\OneDrive - Microsoft\Desktop\Microsoft - NL\Cosmos DB\Learning Path\dp-420-cosmos-db-dev\08-sdk-bulk copy\bin\Debug\net6.0\runtimes\win-x64\native\Microsoft.Azure.Cosmos.ServiceInterop.dll
+C:\Users\aydanaktas\OneDrive - Microsoft\Desktop\Microsoft - NL\Cosmos DB\Learning Path\dp-420-cosmos-db-dev\08-sdk-bulk copy\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\aydanaktas\OneDrive - Microsoft\Desktop\Microsoft - NL\Cosmos DB\Learning Path\dp-420-cosmos-db-dev\08-sdk-bulk copy\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\aydanaktas\OneDrive - Microsoft\Desktop\Microsoft - NL\Cosmos DB\Learning Path\dp-420-cosmos-db-dev\08-sdk-bulk copy\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\aydanaktas\OneDrive - Microsoft\Desktop\Microsoft - NL\Cosmos DB\Learning Path\dp-420-cosmos-db-dev\08-sdk-bulk copy\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\aydanaktas\OneDrive - Microsoft\Desktop\Microsoft - NL\Cosmos DB\Learning Path\dp-420-cosmos-db-dev\08-sdk-bulk copy\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+C:\Users\aydanaktas\OneDrive - Microsoft\Desktop\Microsoft - NL\Cosmos DB\Learning Path\dp-420-cosmos-db-dev\08-sdk-bulk copy\obj\Debug\net6.0\app.csproj.CopyComplete
+C:\Users\aydanaktas\OneDrive - Microsoft\Desktop\Microsoft - NL\Cosmos DB\Learning Path\dp-420-cosmos-db-dev\08-sdk-bulk copy\obj\Debug\net6.0\app.genruntimeconfig.cache
+C:\Users\aydanaktas\OneDrive - Microsoft\Desktop\Microsoft - NL\Cosmos DB\Learning Path\dp-420-cosmos-db-dev\08-sdk-bulk copy\obj\Debug\net6.0\ref\app.dll
+C:\Users\aydanaktas\OneDrive - Microsoft\Desktop\Microsoft - NL\Customers\Heineken\Data Prime trainings\CosmosDB-load\bin\Debug\net6.0\Microsoft.Azure.Cosmos.ServiceInterop.dll
+C:\Users\aydanaktas\OneDrive - Microsoft\Desktop\Microsoft - NL\Customers\Heineken\Data Prime trainings\CosmosDB-load\bin\Debug\net6.0\Cosmos.CRTCompat.dll
+C:\Users\aydanaktas\OneDrive - Microsoft\Desktop\Microsoft - NL\Customers\Heineken\Data Prime trainings\CosmosDB-load\bin\Debug\net6.0\app.exe
+C:\Users\aydanaktas\OneDrive - Microsoft\Desktop\Microsoft - NL\Customers\Heineken\Data Prime trainings\CosmosDB-load\bin\Debug\net6.0\app.deps.json
+C:\Users\aydanaktas\OneDrive - Microsoft\Desktop\Microsoft - NL\Customers\Heineken\Data Prime trainings\CosmosDB-load\bin\Debug\net6.0\app.runtimeconfig.json
+C:\Users\aydanaktas\OneDrive - Microsoft\Desktop\Microsoft - NL\Customers\Heineken\Data Prime trainings\CosmosDB-load\bin\Debug\net6.0\app.dll
+C:\Users\aydanaktas\OneDrive - Microsoft\Desktop\Microsoft - NL\Customers\Heineken\Data Prime trainings\CosmosDB-load\bin\Debug\net6.0\app.pdb
+C:\Users\aydanaktas\OneDrive - Microsoft\Desktop\Microsoft - NL\Customers\Heineken\Data Prime trainings\CosmosDB-load\bin\Debug\net6.0\Azure.Core.dll
+C:\Users\aydanaktas\OneDrive - Microsoft\Desktop\Microsoft - NL\Customers\Heineken\Data Prime trainings\CosmosDB-load\bin\Debug\net6.0\Bogus.dll
+C:\Users\aydanaktas\OneDrive - Microsoft\Desktop\Microsoft - NL\Customers\Heineken\Data Prime trainings\CosmosDB-load\bin\Debug\net6.0\Microsoft.Azure.Cosmos.Client.dll
+C:\Users\aydanaktas\OneDrive - Microsoft\Desktop\Microsoft - NL\Customers\Heineken\Data Prime trainings\CosmosDB-load\bin\Debug\net6.0\Microsoft.Azure.Cosmos.Core.dll
+C:\Users\aydanaktas\OneDrive - Microsoft\Desktop\Microsoft - NL\Customers\Heineken\Data Prime trainings\CosmosDB-load\bin\Debug\net6.0\Microsoft.Azure.Cosmos.Direct.dll
+C:\Users\aydanaktas\OneDrive - Microsoft\Desktop\Microsoft - NL\Customers\Heineken\Data Prime trainings\CosmosDB-load\bin\Debug\net6.0\Microsoft.Azure.Cosmos.Serialization.HybridRow.dll
+C:\Users\aydanaktas\OneDrive - Microsoft\Desktop\Microsoft - NL\Customers\Heineken\Data Prime trainings\CosmosDB-load\bin\Debug\net6.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\aydanaktas\OneDrive - Microsoft\Desktop\Microsoft - NL\Customers\Heineken\Data Prime trainings\CosmosDB-load\bin\Debug\net6.0\Microsoft.Bcl.HashCode.dll
+C:\Users\aydanaktas\OneDrive - Microsoft\Desktop\Microsoft - NL\Customers\Heineken\Data Prime trainings\CosmosDB-load\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\aydanaktas\OneDrive - Microsoft\Desktop\Microsoft - NL\Customers\Heineken\Data Prime trainings\CosmosDB-load\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\Users\aydanaktas\OneDrive - Microsoft\Desktop\Microsoft - NL\Customers\Heineken\Data Prime trainings\CosmosDB-load\bin\Debug\net6.0\System.Configuration.ConfigurationManager.dll
+C:\Users\aydanaktas\OneDrive - Microsoft\Desktop\Microsoft - NL\Customers\Heineken\Data Prime trainings\CosmosDB-load\bin\Debug\net6.0\System.Drawing.Common.dll
+C:\Users\aydanaktas\OneDrive - Microsoft\Desktop\Microsoft - NL\Customers\Heineken\Data Prime trainings\CosmosDB-load\bin\Debug\net6.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\aydanaktas\OneDrive - Microsoft\Desktop\Microsoft - NL\Customers\Heineken\Data Prime trainings\CosmosDB-load\bin\Debug\net6.0\System.Security.Permissions.dll
+C:\Users\aydanaktas\OneDrive - Microsoft\Desktop\Microsoft - NL\Customers\Heineken\Data Prime trainings\CosmosDB-load\bin\Debug\net6.0\System.Windows.Extensions.dll
+C:\Users\aydanaktas\OneDrive - Microsoft\Desktop\Microsoft - NL\Customers\Heineken\Data Prime trainings\CosmosDB-load\bin\Debug\net6.0\runtimes\win-x64\native\Cosmos.CRTCompat.dll
+C:\Users\aydanaktas\OneDrive - Microsoft\Desktop\Microsoft - NL\Customers\Heineken\Data Prime trainings\CosmosDB-load\bin\Debug\net6.0\runtimes\win-x64\native\Microsoft.Azure.Cosmos.ServiceInterop.dll
+C:\Users\aydanaktas\OneDrive - Microsoft\Desktop\Microsoft - NL\Customers\Heineken\Data Prime trainings\CosmosDB-load\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\aydanaktas\OneDrive - Microsoft\Desktop\Microsoft - NL\Customers\Heineken\Data Prime trainings\CosmosDB-load\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\aydanaktas\OneDrive - Microsoft\Desktop\Microsoft - NL\Customers\Heineken\Data Prime trainings\CosmosDB-load\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\aydanaktas\OneDrive - Microsoft\Desktop\Microsoft - NL\Customers\Heineken\Data Prime trainings\CosmosDB-load\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\aydanaktas\OneDrive - Microsoft\Desktop\Microsoft - NL\Customers\Heineken\Data Prime trainings\CosmosDB-load\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+C:\Users\aydanaktas\OneDrive - Microsoft\Desktop\Microsoft - NL\Customers\Heineken\Data Prime trainings\CosmosDB-load\obj\Debug\net6.0\app.csproj.AssemblyReference.cache
+C:\Users\aydanaktas\OneDrive - Microsoft\Desktop\Microsoft - NL\Customers\Heineken\Data Prime trainings\CosmosDB-load\obj\Debug\net6.0\app.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\aydanaktas\OneDrive - Microsoft\Desktop\Microsoft - NL\Customers\Heineken\Data Prime trainings\CosmosDB-load\obj\Debug\net6.0\app.AssemblyInfoInputs.cache
+C:\Users\aydanaktas\OneDrive - Microsoft\Desktop\Microsoft - NL\Customers\Heineken\Data Prime trainings\CosmosDB-load\obj\Debug\net6.0\app.AssemblyInfo.cs
+C:\Users\aydanaktas\OneDrive - Microsoft\Desktop\Microsoft - NL\Customers\Heineken\Data Prime trainings\CosmosDB-load\obj\Debug\net6.0\app.csproj.CoreCompileInputs.cache
+C:\Users\aydanaktas\OneDrive - Microsoft\Desktop\Microsoft - NL\Customers\Heineken\Data Prime trainings\CosmosDB-load\obj\Debug\net6.0\app.csproj.CopyComplete
+C:\Users\aydanaktas\OneDrive - Microsoft\Desktop\Microsoft - NL\Customers\Heineken\Data Prime trainings\CosmosDB-load\obj\Debug\net6.0\app.dll
+C:\Users\aydanaktas\OneDrive - Microsoft\Desktop\Microsoft - NL\Customers\Heineken\Data Prime trainings\CosmosDB-load\obj\Debug\net6.0\refint\app.dll
+C:\Users\aydanaktas\OneDrive - Microsoft\Desktop\Microsoft - NL\Customers\Heineken\Data Prime trainings\CosmosDB-load\obj\Debug\net6.0\app.pdb
+C:\Users\aydanaktas\OneDrive - Microsoft\Desktop\Microsoft - NL\Customers\Heineken\Data Prime trainings\CosmosDB-load\obj\Debug\net6.0\app.genruntimeconfig.cache
+C:\Users\aydanaktas\OneDrive - Microsoft\Desktop\Microsoft - NL\Customers\Heineken\Data Prime trainings\CosmosDB-load\obj\Debug\net6.0\ref\app.dll
