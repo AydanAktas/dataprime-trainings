@@ -634,7 +634,7 @@
 			  "apiVersion": "2021-11-01-preview",
 			  "name": "[concat('module1-kv-', parameters('suffix'), '/SQLMetadataConnectionString')]",
 			  "properties": {
-				"value": "[concat('Server=tcp:dataprime-', parameters('suffix'), '.database.windows.net,1433;Initial Catalog=AdventureWorks;Persist Security Info=False;User ID=', parameters('AdminUser'), ';Password=', parameters('AdminPassword'), ';MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;')]"
+				"value": "[concat('Server=tcp:dataprime-', parameters('suffix'), '.database.windows.net,1433;Initial Catalog=metadata;Persist Security Info=False;User ID=', parameters('AdminUser'), ';Password=', parameters('AdminPassword'), ';MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;')]"
 			  },
 			  "dependsOn": [
 				"[resourceId('Microsoft.KeyVault/vaults', concat('module1-kv-', parameters('suffix')))]"
