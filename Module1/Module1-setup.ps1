@@ -56,7 +56,7 @@ $SqlServer    = "sqlvm-" + $suffix.Substring(4) + "." + $resourceGroup.Location 
 $adventureworksSasKey = New-AzureStorageContainerSASToken -Container "adventureworks" -Context $dataLakeContext -Permission rwdl
 
 $CredentialQuery = "CREATE CREDENTIAL [https://adlsmodule1" + $suffix + ".blob.core.windows.net/adventureworks]
-WITH IDENTITY='SHARED ACCESS SIGNATURE', SECRET = '" + $adventureworksSasKey.Substring(1) + "'"
+WITH IDENTITY='SHARED ACCESS SIGNATURE', SECRET = '" + $adventureworksSasKey + "'"
 
 Invoke-Sqlcmd  -ConnectionString "Data Source=$SqlServer; User Id=$AdminUser; Password =$AdminPassword; TrustServerCertificate=true" -Query $CredentialQuery
 
