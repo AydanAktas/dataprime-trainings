@@ -38,9 +38,9 @@ $dataLakeStorageUrl = "https://" + $dataLakeAccountName + ".dfs.core.windows.net
 $dataLakeStorageAccountKey = (Get-AzStorageAccountKey -ResourceGroupName $resourceGroupName -AccountName $dataLakeAccountName)[0].Value
 $dataLakeContext = New-AzureStorageContext -StorageAccountName $dataLakeAccountName -StorageAccountKey $dataLakeStorageAccountKey
 $HrFilesSasKey = New-AzureStorageContainerSASToken -Container "hrfiles" -Context $dataLakeContext -Permission rwdl
-$destinationHrFiles = $dataLakeStorageUrl + "hrfiles" + $HrFilesSasKey
+$destinationHrFiles = $dataLakeStorageUrl + "hrfiles?" + $HrFilesSasKey
 $AdventureWorksSasKey = New-AzureStorageContainerSASToken -Container "adventureworks" -Context $dataLakeContext -Permission rwdl
-$destinationAdventureWorks = $dataLakeStorageUrl + "adventureworks" + $AdventureWorksSasKey
+$destinationAdventureWorks = $dataLakeStorageUrl + "adventureworks?" + $AdventureWorksSasKey
 
 Write-Information "Loading the data into the storage account..."
 
