@@ -24,7 +24,6 @@ $SecurePassword = ConvertTo-SecureString $AdminPassword -AsPlainText -Force
 $result = New-AzResourceGroupDeployment -Verbose `
   -Name "Module1-Deployment" `
   -ResourceGroupName $resourceGroupName `
-  -suffix $suffix `
   -adminuser $AdminUser `
   -adminpassword $SecurePassword `
   -TemplateFile ARM-Template-Module1.json
