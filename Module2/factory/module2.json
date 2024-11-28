@@ -1,0 +1,9 @@
+{
+	"name": "module2",
+	"location": "westeurope",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "ee907ace-ebc3-4f3c-890c-163f335ebace",
+		"tenantId": "1845b129-6a0a-4348-8a49-8b4680221881"
+	}
+}

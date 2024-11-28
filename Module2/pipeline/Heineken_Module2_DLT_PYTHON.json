@@ -1,0 +1,33 @@
+{
+	"name": "Heineken_Module2_DLT_PYTHON",
+	"properties": {
+		"activities": [
+			{
+				"name": "Heineken_Module2_DLT_PYTHON",
+				"type": "ExecutePipeline",
+				"dependsOn": [],
+				"policy": {
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"pipeline": {
+						"referenceName": "Run Databricks Job",
+						"type": "PipelineReference"
+					},
+					"waitOnCompletion": true,
+					"parameters": {
+						"JobID": "135379067477197",
+						"DatabricksWorkspaceID": "adb-684088417611633.13"
+					}
+				}
+			}
+		],
+		"folder": {
+			"name": "Module 2 Demo"
+		},
+		"annotations": [],
+		"lastPublishTime": "2023-04-03T13:09:17Z"
+	},
+	"type": "Microsoft.DataFactory/factories/pipelines"
+}
